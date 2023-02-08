@@ -19,6 +19,8 @@ import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const db = getFirestore(app);
-
-
+  const form = document.querySelector("form")
+  form.addEventListener('click' , (event) =>{
+    event.preventDefault();
+  })
 console.log(app);
